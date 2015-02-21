@@ -6,7 +6,6 @@
       <class name="co.unbosque.edu.conexionTest.TestConexionBD">
         <methods>
           <include name="pruevaConexion1"/>
-          <include name="prueva_coneccion"/>
         </methods>
       </class> <!-- co.unbosque.edu.conexionTest.TestConexionBD -->
     </classes>

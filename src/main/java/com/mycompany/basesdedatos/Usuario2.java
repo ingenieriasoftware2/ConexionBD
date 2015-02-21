@@ -6,7 +6,8 @@
 
 package com.mycompany.basesdedatos;
 
-import java.sql.Connection;
+import static com.mycompany.basesdedatos.Singleton.getconnetion;
+
 
 /**
  *
@@ -16,9 +17,8 @@ public class Usuario2 {
 
     public boolean estadoDeConexion() {
          boolean valor=false;
-        
-        Connection c = Singleton.getconnetion();
-         if (c!=null) {
+     
+         if (getconnetion()!=null) {
         valor=true;        
         }
         return valor;

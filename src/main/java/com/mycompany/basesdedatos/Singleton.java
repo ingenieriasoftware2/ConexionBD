@@ -20,16 +20,22 @@ import org.junit.Assert;
  * @author pablo
  */
 public class Singleton {
-    static  Connection conexion=null;
+    private static Singleton singleton;
+    private static  Connection conexion=null;
+    
+    private Singleton(){
+        singleton.getconnetion();
+    }
  
   public static Connection getconnetion() {
      try {
+         
             String cadenaConexion = "jdbc:postgresql://nuevo.aretico.com:5432/software_2";
-            String usuario="grupo3";
+           String usuario="grupo3";
             String clave="software2";
+          Class.forName("org.postgresql.Driver");
             
-            Class.forName("org.postgresql.Driver");
-            
+                   
          
              
          

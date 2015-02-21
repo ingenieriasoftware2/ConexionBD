@@ -46,8 +46,8 @@ public class TestConexionBD {
      @Test
     public void pruevaConexion1() {
 
-        Singleton singleton = new Singleton();
-        Connection c = singleton.getconnetion();
+        
+        Connection c = Singleton.getconnetion();
          org.testng.Assert.assertNotNull(c);
 
     }
