@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [co.unbosque.edu.conexionTest.TestConexionBD]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="co.unbosque.edu.conexionTest.TestConexionBD">
+        <methods>
+          <include name="pruevaConexion1"/>
+          <include name="prueva_coneccion"/>
+        </methods>
+      </class> <!-- co.unbosque.edu.conexionTest.TestConexionBD -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [co.unbosque.edu.conexionTest.TestConexionBD] -->
