@@ -9,6 +9,7 @@ import com.mycompany.basesdedatos.Usuario2;
 import com.mycompany.basesdedatos.Usuario1;
 import com.mycompany.basesdedatos.Singleton;
 import java.sql.Connection;
+import java.sql.SQLException;
 import org.testng.annotations.Test;
 /**
  *
@@ -34,4 +35,5 @@ public class TestConecxionClase {
      org.testng.Assert.assertEquals(conectado, true) ;
       
    } 
+   
 }

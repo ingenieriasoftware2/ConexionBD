@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="1.749" errors="0" skipped="0" tests="1" name="co.unbosque.edu.conexionTest.TestConexionBD">
+<testsuite failures="1" time="24.434" errors="0" skipped="0" tests="1" name="co.unbosque.edu.conexionTest.TestConexionBD">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_45\jre\bin"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar"/>
     <property name="classworlds.conf" value="C:\Program Files\NetBeans 8.0\java\maven\bin\m2.conf"/>
     <property name="netbeansProjectMappings" value=""/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
@@ -46,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_45\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=co.unbosque.edu.conexionTest.TestConexionBD -DnetbeansProjectMappings= -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 surefire:test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=co.unbosque.edu.conexionTest.TestConexionBD -DnetbeansProjectMappings= -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.0\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 surefire:test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="es"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -63,5 +63,72 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="0.922" classname="co.unbosque.edu.conexionTest.TestConexionBD" name="pruevaConexion1"/>
+  <testcase time="22.218" classname="co.unbosque.edu.conexionTest.TestConexionBD" name="pruevaConexion1">
+    <failure message="expected object to not be null" type="java.lang.AssertionError">java.lang.AssertionError: expected object to not be null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.assertNotNull(Assert.java:404)
+	at org.testng.Assert.assertNotNull(Assert.java:389)
+	at co.unbosque.edu.conexionTest.TestConexionBD.pruevaConexion1(TestConexionBD.java:51)
+</failure>
+    <system-err>org.postgresql.util.PSQLException: Connection to nuevo.aretico.com:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:239)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.&lt;init&gt;(AbstractJdbc2Connection.java:127)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.&lt;init&gt;(AbstractJdbc3Connection.java:29)
+	at org.postgresql.jdbc3g.AbstractJdbc3gConnection.&lt;init&gt;(AbstractJdbc3gConnection.java:21)
+	at org.postgresql.jdbc4.AbstractJdbc4Connection.&lt;init&gt;(AbstractJdbc4Connection.java:41)
+	at org.postgresql.jdbc4.Jdbc4Connection.&lt;init&gt;(Jdbc4Connection.java:24)
+	at org.postgresql.Driver.makeConnection(Driver.java:414)
+	at org.postgresql.Driver.connect(Driver.java:282)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at com.mycompany.basesdedatos.Singleton.getconnetion(Singleton.java:47)
+	at co.unbosque.edu.conexionTest.TestConexionBD.pruevaConexion1(TestConexionBD.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:70)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:109)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.postgresql.core.PGStream.&lt;init&gt;(PGStream.java:61)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:121)
+	... 45 more
+</system-err>
+  </testcase>
 </testsuite>

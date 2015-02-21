@@ -21,7 +21,7 @@ import org.junit.Assert;
  */
 public class Singleton {
     private static Singleton singleton;
-    private static  Connection conexion=null;
+    private static  Connection conexion;
     
     private Singleton(){
         singleton.getconnetion();
@@ -34,14 +34,13 @@ public class Singleton {
            String usuario="grupo3";
             String clave="software2";
           Class.forName("org.postgresql.Driver");
-            
-                   
-         
+        
+       
              
          
  
             conexion = DriverManager.getConnection(cadenaConexion,usuario,clave);
-            Assert.assertNotNull(conexion);
+           Assert.assertNotNull(conexion);
             
           
         } catch (Exception ex) {

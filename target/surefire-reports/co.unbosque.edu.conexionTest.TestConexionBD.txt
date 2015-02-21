@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: co.unbosque.edu.conexionTest.TestConexionBD
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.765 sec
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 24.434 sec <<< FAILURE!
+pruevaConexion1(co.unbosque.edu.conexionTest.TestConexionBD)  Time elapsed: 22.218 sec  <<< FAILURE!
+java.lang.AssertionError: expected object to not be null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.assertNotNull(Assert.java:404)
+	at org.testng.Assert.assertNotNull(Assert.java:389)
+	at co.unbosque.edu.conexionTest.TestConexionBD.pruevaConexion1(TestConexionBD.java:51)

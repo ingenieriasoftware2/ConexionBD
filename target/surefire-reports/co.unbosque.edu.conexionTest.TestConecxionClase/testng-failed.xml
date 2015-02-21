@@ -5,7 +5,7 @@
     <classes>
       <class name="co.unbosque.edu.conexionTest.TestConecxionClase">
         <methods>
-          <include name="conectar1"/>
+          <include name="contarDatos"/>
         </methods>
       </class> <!-- co.unbosque.edu.conexionTest.TestConecxionClase -->
     </classes>

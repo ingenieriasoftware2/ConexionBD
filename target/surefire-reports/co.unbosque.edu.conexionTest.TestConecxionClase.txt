@@ -1,4 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: co.unbosque.edu.conexionTest.TestConecxionClase
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.593 sec
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 13.99 sec <<< FAILURE!
+contarDatos(co.unbosque.edu.conexionTest.TestConecxionClase)  Time elapsed: 11.844 sec  <<< FAILURE!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.checkClosed(AbstractJdbc2Connection.java:820)
+	at org.postgresql.jdbc3.AbstractJdbc3Connection.prepareStatement(AbstractJdbc3Connection.java:275)
+	at org.postgresql.jdbc2.AbstractJdbc2Connection.prepareStatement(AbstractJdbc2Connection.java:293)
+	at com.mycompany.basesdedatos.Usuario2.ejecutarQuery(Usuario2.java:31)
+	at co.unbosque.edu.conexionTest.TestConecxionClase.contarDatos(TestConecxionClase.java:41)
