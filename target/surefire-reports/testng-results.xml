@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="co.unbosque.edu.conexionTest.TestConexionBD" duration-ms="1393" started-at="2015-02-21T06:56:46Z" finished-at="2015-02-21T06:56:48Z">
+  <suite name="co.unbosque.edu.conexionTest.TestConecxionClase" duration-ms="1784" started-at="2015-02-21T07:44:36Z" finished-at="2015-02-21T07:44:37Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="1393" started-at="2015-02-21T06:56:46Z" finished-at="2015-02-21T06:56:48Z">
-      <class name="co.unbosque.edu.conexionTest.TestConexionBD">
-        <test-method status="PASS" signature="pruevaConexion1()[pri:0, instance:co.unbosque.edu.conexionTest.TestConexionBD@1815a349]" name="pruevaConexion1" duration-ms="1362" started-at="2015-02-21T01:56:46Z" finished-at="2015-02-21T01:56:47Z">
+    <test name="Command line test" duration-ms="1784" started-at="2015-02-21T07:44:36Z" finished-at="2015-02-21T07:44:37Z">
+      <class name="co.unbosque.edu.conexionTest.TestConecxionClase">
+        <test-method status="PASS" signature="conectar()[pri:0, instance:co.unbosque.edu.conexionTest.TestConecxionClase@6483f3a0]" name="conectar" duration-ms="1304" started-at="2015-02-21T02:44:36Z" finished-at="2015-02-21T02:44:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pruevaConexion1 -->
-      </class> <!-- co.unbosque.edu.conexionTest.TestConexionBD -->
+        </test-method> <!-- conectar -->
+        <test-method status="PASS" signature="conectar1()[pri:0, instance:co.unbosque.edu.conexionTest.TestConecxionClase@6483f3a0]" name="conectar1" duration-ms="447" started-at="2015-02-21T02:44:37Z" finished-at="2015-02-21T02:44:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- conectar1 -->
+      </class> <!-- co.unbosque.edu.conexionTest.TestConecxionClase -->
     </test> <!-- Command line test -->
-  </suite> <!-- co.unbosque.edu.conexionTest.TestConexionBD -->
+  </suite> <!-- co.unbosque.edu.conexionTest.TestConecxionClase -->
 </testng-results>
